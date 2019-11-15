@@ -1,0 +1,105 @@
+Angular 8 Start -->
+
+npm install -g @angular/cli
+ng new my-dream-app
+cd my-dream-app
+ng serve
+
+Mongo Db
+
+install mongodb-win32-x
+copy the 
+C:\Program Files\MongoDB\Server\4.2\bin
+
+cmd screen -1
+C:\Program Files\MongoDB\Server\4.2\bin\mongod
+	create folder c:\data\db
+cmd screen -2
+C:\Program Files\MongoDB\Server\4.2\bin\mongo
+	> show dbs - list out the db name (admin, config, local)
+	> use mylib
+	  switched to db mylib
+	>show dbs - list out the (mylib)
+	>db.books.insert({"name":"mongod name"})
+	> show collections;
+	> db.books.find()
+
+Enverionmental variable 
+	-- control panel > system and security > Advance system setting 
+		> Advance tab	> Envirental variable (click) >
+		> system variables -- Path (double click) it would open one dialog box
+		> Click New - C:\Program Files\MongoDB\Server\4.2\bin
+		> Ok
+
+
+Mongo Db Query
+> show dbs
+> use mylib
+> db.book.find()
+> db.book.find().forEach(printjson)
+> db.mylib.count()
+> db.book.insert({name:'Apple', product:'Iphonebook', book_id:'01'});
+
+> var data = {}
+> data.name = "Harry potter"
+Harry potter
+> data.product ="Edition 1 Harry potter"
+Edition 1 Harry potter
+> data.book_id="02"
+02
+> db.book.save(data)
+
+
+
+
+
+npm install -g nodemon
+npm install --save-dev nodemon
+nodemon server.js
+
+
+Git Command
+
+Local to Repository
+
+Go to project folder inside right click - open gitbash tool
+
+git config --global user.name "sendil1211"
+git config --user.email "sendil1211@gmail.com"
+
+git init Angular_node_mongodb
+git add *
+git commit -m "first commit"
+git remote add origin git@github.com:sendil1211/Angular_node_mongodb.git
+git push origin master
+
+Comman command git
+
+git clone https://github.com:sendil1211/Angular_node_mongodb.git
+git add .
+git diff
+git diff branch_1 branch_2
+git reset file
+git reset commit
+git reset -hard commit
+git status
+git rm
+git log
+git branch
+git show
+git checkout branch_1
+git merge branch_1
+git push variable name master
+git push variable name branch
+git push -all variable name
+git pull https://github.com:sendil1211/Angular_node_mongodb.git
+git stash pop
+git stash save
+git stash list
+
+
+
+
+
+ 
+
